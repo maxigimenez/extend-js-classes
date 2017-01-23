@@ -1,1 +1,1 @@
-# Extended JavaScript methods in base of Ruby
+# Extend JavaScript classes in base of Ruby methods

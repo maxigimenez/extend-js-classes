@@ -1,0 +1,32 @@
+{
+  "name": "extend-js-classes",
+  "version": "1.0.0",
+  "description": "Extend JavaScript classes in base of Ruby methods",
+  "main": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "bundle": "concat-cli -f src/*.js -o lib/bundle.js && babel -d lib/ lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxigimenez/extend-js-classes.git"
+  },
+  "author": "Maxi Gimenez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxigimenez/extend-js-classes/issues"
+  },
+  "homepage": "https://github.com/maxigimenez/extend-js-classes#readme",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "concat-cli": "^4.0.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0"
+  }
+}

@@ -19,3 +19,11 @@
 ### .include()
 
 ### .take()
+
+## Number
+
+### .times()
+
+### .upto()
+
+### .downto()

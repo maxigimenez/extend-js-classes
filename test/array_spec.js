@@ -1,9 +1,9 @@
 const expect = require('expect.js');
-const arrayLib = require('../src/array');
+require('../src/array');
 
 describe('Array', () => {
 
-  describe('#first()', () => {
+  describe('.first()', () => {
 
     it('should return undefined if array empty', () => {
       const dummy = [];
@@ -17,7 +17,7 @@ describe('Array', () => {
 
   });
 
-  describe('#last()', () => {
+  describe('.last()', () => {
 
     it('should return undefined if array empty', () => {
       const dummy = [];
@@ -31,7 +31,7 @@ describe('Array', () => {
 
   });
 
-  describe('#emtpy()', () => {
+  describe('.emtpy()', () => {
 
     it('should return truthy if array empty', () => {
       const dummy = [];
@@ -45,7 +45,7 @@ describe('Array', () => {
 
   });
 
-  describe('#clear()', () => {
+  describe('.clear()', () => {
 
     it('should return an empty array', () => {
       const dummy = ['first', 'second'];
@@ -55,7 +55,7 @@ describe('Array', () => {
 
   });
 
-  describe('#size()', () => {
+  describe('.size()', () => {
 
     it('should return size of the array', () => {
       const dummy = ['first', 'second'];
@@ -64,7 +64,7 @@ describe('Array', () => {
 
   });
 
-  describe('#sample()', () => {
+  describe('.sample()', () => {
 
     it('should return a random value from array', () => {
       const dummy = ['first', 'second'];
@@ -74,7 +74,7 @@ describe('Array', () => {
 
   });
 
-  describe('#compact()', () => {
+  describe('.compact()', () => {
 
     it('should return a copy of the array with all undefined/null elements removed', () => {
       const dummy = ['first', undefined, 'third', null];
@@ -83,7 +83,7 @@ describe('Array', () => {
 
   });
 
-  describe('#include()', () => {
+  describe('.include()', () => {
 
     it('should return true if the given string is present', () => {
       const dummy = ['first', 'second'];
@@ -105,7 +105,7 @@ describe('Array', () => {
 
   });
 
-  describe('#take()', () => {
+  describe('.take()', () => {
 
     it('should return first n elements from array', () => {
       const dummy = ['first', 'second', 'third'];

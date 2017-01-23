@@ -83,4 +83,26 @@ describe('Array', () => {
 
   });
 
+  describe('#include()', () => {
+
+    it('should return true if the given string is present', () => {
+      const dummy = ['first', 'second'];
+      expect(dummy.include('second')).to.be.ok();
+    });
+
+    it('should return true if the given object is present', () => {
+      const dummyObject = {
+        test: 'dummy test'
+      };
+      const dummy = ['first', dummyObject];
+      expect(dummy.include(dummyObject)).to.be.ok();
+    });
+
+    it('should return false if the given object is not present', () => {
+      const dummy = ['first'];
+      expect(dummy.include('second')).to.not.be.ok();
+    });
+
+  });
+
 });

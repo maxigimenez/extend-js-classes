@@ -28,3 +28,9 @@ Array.prototype.compact = function () {
     return value;
   });
 };
+
+Array.prototype.include = function (object) {
+  return this.filter((value) => {
+    return JSON.stringify(value) === JSON.stringify(object);
+  }).length > 0;
+};

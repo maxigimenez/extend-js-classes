@@ -12,7 +12,7 @@ describe('Array', () => {
     
     it('should return the fisrt value of the array', () => {
       const dummy = ['first', 'second'];
-      expect(dummy.first()).to.be.equal('second');
+      expect(dummy.first()).to.be.equal('first');
     });
 
   });

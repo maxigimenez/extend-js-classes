@@ -34,3 +34,7 @@ Array.prototype.include = function (object) {
     return JSON.stringify(value) === JSON.stringify(object);
   }).length > 0;
 };
+
+Array.prototype.take = function (n) {
+  return this.splice(0, n);
+};

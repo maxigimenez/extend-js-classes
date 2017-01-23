@@ -105,4 +105,13 @@ describe('Array', () => {
 
   });
 
+  describe('#take()', () => {
+
+    it('should return first n elements from array', () => {
+      const dummy = ['first', 'second', 'third'];
+      expect(dummy.take(2)).to.be.eql(['first', 'second']);
+    });
+
+  });
+
 });

@@ -17,3 +17,5 @@
 ### .compact()
 
 ### .include()
+
+### .take()
